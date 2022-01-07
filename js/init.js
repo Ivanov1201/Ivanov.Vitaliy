@@ -184,6 +184,7 @@ function iknow_tm_portfolio_popup(){
 		var parent 	= element.closest('.list_inner');
 		var content = parent.find('.hidden_content').html();
 		var image	= parent.find('.image .main').data('img-url');
+		image = image.split('.')[0] + '-0.jpg';
 		var details = parent.find('.details').html();
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
