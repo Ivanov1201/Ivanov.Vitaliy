@@ -843,11 +843,6 @@ function iknow_tm_page_transition(){
 	button.on('click',function(){
 		var element 	= jQuery(this);
 		var href		= element.attr('href');
-		if(element.parent().hasClass('iknow_tm_button')){
-			jQuery('.menu.transition_link a[href="'+href+'"]').trigger('click');
-			hashtag2();
-			return false;
-		}
 		var sectionID 	= jQuery(href);
 		var parent	 	= element.closest('li');
 			if(!parent.hasClass('active')) {
